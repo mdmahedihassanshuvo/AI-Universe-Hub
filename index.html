@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Assignment-6</title>
+    <script src="https://kit.fontawesome.com/5dcad77b08.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="text-center mt-5">
+        <h1 class="mb-3">AI Universe Hub</h1>
+        <button onclick="" id="sort-btn" class="btn btn-danger">Sort By Date</button>
+    </header>
+
+    <main>
+        <!-- ------------card section----------- -->
+        <section class="container mt-5">
+            <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+
+            <!-- --------------------spinner-------------------- -->
+
+            <div id="spinner" class="d-flex justify-content-center d-none">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+
+            <div id="ShowAll" class="d-flex justify-content-center mt-3 d-none">
+                <div class="btn btn-primary">See More</div>
+            </div>
+        </section>
+        <!-- ------------------modal section------------------- -->
+        <section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-Id" tabindex="-1" aria-labelledby="modal-IdLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="modal-body" class="modal-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="./js/sort-By-Dt.js"></script>
+</body>
+
+</html>
